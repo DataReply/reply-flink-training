@@ -20,29 +20,28 @@ public class Exercise2_DataProcessing {
     public static void main(String[] args) throws Exception {
         final StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
 
-        // Data Source
-        // DataStream<String> raw = env.fromElements("User1,100,1000", "User2,50,2000",
-        // "User1,-10,3000", "User1,20,4000");
+        // DataStream<String> raw = env.fromData(List.of(
+        //         "User1,100,1000", "User2,50,2000", "User1,-10,3000", "User1,20,4000", "User2,50,5000"));
 
         // TODO implement pipeline
 
         env.execute("Exercise 2");
     }
 
-    // Static inner class for Transaction POJO
     public static class Transaction {
         public String userId;
         public double amount;
         public long timestamp;
 
-        public Transaction() {
-        }
-
+        public Transaction() {}
         public Transaction(String u, double a, long t) {
             this.userId = u;
             this.amount = a;
             this.timestamp = t;
         }
-        // toString...
+
+        @Override public String toString() {
+            return "Transaction{userId='" + userId + "', amount=" + amount + ", timestamp=" + timestamp + "}";
+        }
     }
 }

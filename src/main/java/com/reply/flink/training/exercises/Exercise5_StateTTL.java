@@ -17,6 +17,6 @@ public class Exercise5_StateTTL {
     public static void main(String[] args) throws Exception {
         final StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
 
-        env.execute("Exercise 5");
+        env.execute("Exercise 5 - State Management & TTL");
     }
 }

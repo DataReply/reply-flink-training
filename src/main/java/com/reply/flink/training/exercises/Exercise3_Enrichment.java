@@ -19,6 +19,6 @@ public class Exercise3_Enrichment {
 
         // Streams...
 
-        env.execute("Exercise 3");
+        env.execute("Exercise 3 - Enrichment");
     }
 }

@@ -7,7 +7,7 @@ import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
  * Goal: Create a Source -> Transform -> Sink pipeline.
  * <p>
  * TODO 1: Create the ExecutionEnvironment.
- * TODO 2: Create a DataStream from a fixed list of Strings (e.g., "Hello", "Apache", "Flink").
+ * TODO 2: Create a DataStream from a fixed list of Strings (e.g., ""Hello", "Apache", "Flink", "Streaming").
  * TODO 3: Map the strings to uppercase.
  * TODO 4: Print the result to stdout.
  * TODO 5: Execute the job.

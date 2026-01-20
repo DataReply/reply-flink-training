@@ -16,6 +16,6 @@ import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 public class Exercise6_Join {
     public static void main(String[] args) throws Exception {
         final StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
-        env.execute("Exercise 6");
+        env.execute("Exercise 6 - Stream-Stream Join");
     }
 }
