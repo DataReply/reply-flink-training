@@ -2,6 +2,14 @@ package com.reply.flink.training.exercises;
 
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 
+import org.apache.flink.api.common.eventtime.WatermarkStrategy;
+import org.apache.flink.streaming.api.datastream.DataStream;
+import org.apache.flink.streaming.api.windowing.assigners.TumblingEventTimeWindows;
+import com.reply.flink.training.exercises.Exercise2_DataProcessing.Transaction;
+
+import java.time.Duration;
+import java.util.List;
+
 /**
  * Esercizio 2: Elaborazione Dati
  * Obiettivo: Parsare uno stream di Strings in POJO, Filter, KeyBy e Window.
@@ -20,8 +28,8 @@ public class Exercise2_DataProcessing {
     public static void main(String[] args) throws Exception {
         final StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
 
-        // DataStream<String> raw = env.fromData(List.of(
-        //         "User1,100,1000", "User2,50,2000", "User1,-10,3000", "User1,20,4000", "User2,50,5000"));
+         DataStream<String> raw = env.fromData(List.of(
+                 "User1,100,1000", "User2,50,2000", "User1,-10,3000", "User1,20,4000", "User2,50,5000"));
 
         // TODO implementare la pipeline
 
