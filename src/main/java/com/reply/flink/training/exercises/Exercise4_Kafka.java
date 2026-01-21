@@ -15,6 +15,10 @@ public class Exercise4_Kafka {
     public static void main(String[] args) throws Exception {
         final StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
 
+        // Use environment variable for Kafka brokers (AWS MSK or localhost)
+        String broker = System.getenv().getOrDefault("KAFKA_BOOTSTRAP_SERVERS", "localhost:9092");
+        System.out.println("Using Kafka bootstrap servers: " + broker);
+
         // TODO: Define properties for Kafka
         // Properties props = new Properties();
         // props.setProperty("bootstrap.servers", "localhost:9092");

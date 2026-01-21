@@ -49,13 +49,18 @@
         <!-- Connectors: Kafka & Iceberg -->
         <dependency>
             <groupId>org.apache.flink</groupId>
+            <artifactId>flink-connector-base</artifactId>
+            <version>1.20.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.flink</groupId>
             <artifactId>flink-connector-kafka</artifactId>
-            <version>3.0.0-1.17</version> <!-- Verify latest compat. Using a stable relative to 1.20 -->
+            <version>3.3.0-1.20</version>
         </dependency>
         <dependency>
             <groupId>org.apache.iceberg</groupId>
-            <artifactId>iceberg-flink-runtime-1.17</artifactId> 
-            <version>1.4.3</version>
+            <artifactId>iceberg-flink-runtime-1.20</artifactId>
+            <version>1.7.1</version>
         </dependency>
 
         <!-- Logging -->
