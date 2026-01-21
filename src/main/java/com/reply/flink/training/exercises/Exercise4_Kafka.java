@@ -3,28 +3,28 @@ package com.reply.flink.training.exercises;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 
 /**
- * Exercise 4: Kafka Source & Sink
- * Goal: Read from Kafka topic 'input', process, write to 'output'.
+ * Esercizio 4: Kafka Source & Sink
+ * Obiettivo: Leggere dal topic Kafka 'input', elaborare, scrivere su 'output'.
  * <p>
- * TODO: Configure Kafka Source (bootstrap servers, group id).
- * TODO: Create DataStream from Kafka.
- * TODO: Write to Console or another Kafka topic.
+ * TODO: Configurare Kafka Source (bootstrap servers, group id).
+ * TODO: Creare DataStream da Kafka.
+ * TODO: Scrivere su Console o su un altro topic Kafka.
  */
 public class Exercise4_Kafka {
 
     public static void main(String[] args) throws Exception {
         final StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
 
-        // Use environment variable for Kafka brokers (AWS MSK or localhost)
+        // Usare variabile d'ambiente per i broker Kafka (AWS MSK o localhost)
         String broker = System.getenv().getOrDefault("KAFKA_BOOTSTRAP_SERVERS", "localhost:9092");
-        System.out.println("Using Kafka bootstrap servers: " + broker);
+        System.out.println("Utilizzo bootstrap servers Kafka: " + broker);
 
-        // TODO: Define properties for Kafka
+        // TODO: Definire le properties per Kafka
         // Properties props = new Properties();
         // props.setProperty("bootstrap.servers", "localhost:9092");
         
-        // TODO: Add Source
-        
-        // TODO: Execute
+        // TODO: Aggiungere Source
+
+        // TODO: Eseguire
     }
 }

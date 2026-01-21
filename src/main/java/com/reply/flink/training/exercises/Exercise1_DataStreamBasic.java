@@ -3,27 +3,27 @@ package com.reply.flink.training.exercises;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 
 /**
- * Exercise 1: Basic DataStream API
- * Goal: Create a Source -> Transform -> Sink pipeline.
+ * Esercizio 1: API DataStream di base
+ * Obiettivo: Creare una pipeline Source -> Transform -> Sink.
  * <p>
- * TODO 1: Create the ExecutionEnvironment.
- * TODO 2: Create a DataStream from a fixed list of Strings (e.g., ""Hello", "Apache", "Flink", "Streaming").
- * TODO 3: Map the strings to uppercase.
- * TODO 4: Print the result to stdout.
- * TODO 5: Execute the job.
+ * TODO 1: Creare l'ExecutionEnvironment.
+ * TODO 2: Creare un DataStream da una lista fissa di Strings (es., "Hello", "Apache", "Flink", "Streaming").
+ * TODO 3: Mappare le stringhe in maiuscolo.
+ * TODO 4: Stampare il risultato su stdout.
+ * TODO 5: Eseguire il job.
  */
 public class Exercise1_DataStreamBasic {
 
     public static void main(String[] args) throws Exception {
-        // 1. Get the execution environment
+        // 1. Ottenere l'execution environment
         // final StreamExecutionEnvironment env = ...
 
-        // 2. Create a source
-        
-        // 3. Transformation
+        // 2. Creare una source
+
+        // 3. Trasformazione
 
         // 4. Sink
 
-        // 5. Execute
+        // 5. Eseguire
     }
 }
