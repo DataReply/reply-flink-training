@@ -3,19 +3,21 @@ package com.reply.flink.training.exercises;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 
 /**
- * Esercizio 5: Gestione State & TTL
- * Obiettivo: Deduplicare uno stream di eventi usando Keyed State.
+ * Exercise 5: State Management & TTL
+ * Goal: Deduplicate a stream of events using Keyed State.
  * <p>
- * TODO 1: Stream di ID evento (alcuni duplicati).
+ * TODO 1: Stream of event IDs (some duplicates).
  * TODO 2: KeyBy EventId.
- * TODO 3: Usare KeyedProcessFunction.
- * TODO 4: Definire ValueState<Boolean> "seen" con una TTL Config (es., 10 secondi).
- * TODO 5: Se visto, scartare. Se non visto, inoltrare e impostare seen=true.
+ * TODO 3: Use KeyedProcessFunction.
+ * TODO 4: Define ValueState<Boolean> "seen" with a TTL Config (e.g., 10 seconds).
+ * TODO 5: If seen, drop. If not seen, forward and set seen=true.
  */
 public class Exercise5_StateTTL {
 
     public static void main(String[] args) throws Exception {
         final StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
+
+        // TODO: Implement deduplication with state and TTL
 
         env.execute("Exercise 5 - State Management & TTL");
     }
