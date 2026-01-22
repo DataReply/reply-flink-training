@@ -3,29 +3,29 @@ package com.reply.flink.training.exercises;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 
 /**
- * Esercizio 3B: Arricchimento con Async I/O (Avanzato)
- * Obiettivo: Arricchire uno stream di Transaction con dati esterni usando il pattern Async I/O
- * per elevato throughput.
+ * Exercise 3B: Async I/O Enrichment (Advanced)
+ * Goal: Enrich a Transaction stream with external data using Async I/O pattern
+ * for high throughput.
  * <p>
- * Questa è una variante AVANZATA dell'Esercizio 3 che dimostra il pattern Async I/O
- * per l'arricchimento con sistemi esterni (database, REST API, cache, ecc.)
+ * This is an ADVANCED variant of Exercise 3 demonstrating the Async I/O pattern
+ * for enrichment with external systems (database, REST API, cache, etc.)
  * <p>
- * TODO 1: Creare lo Stream di Transaction.
- * TODO 2: Implementare AsyncFunction per eseguire lookup asincrono.
- * TODO 3: Usare AsyncDataStream.unorderedWait() o orderedWait().
- * TODO 4: Configurare timeout e capacity.
+ * TODO 1: Create Transaction Stream.
+ * TODO 2: Implement AsyncFunction to perform async lookup.
+ * TODO 3: Use AsyncDataStream.unorderedWait() or orderedWait().
+ * TODO 4: Configure timeout and capacity.
  * <p>
- * Nota: Per la simulazione, puoi usare Thread.sleep() con CompletableFuture
- * per simulare una chiamata esterna asincrona. In produzione, usa librerie client asincrone
- * (Netty HTTP client, driver JDBC asincrono, client Redis asincrono, ecc.)
+ * Note: For simulation, you can use Thread.sleep() with CompletableFuture
+ * to simulate async external call. In production, use async client libraries
+ * (Netty HTTP client, async JDBC driver, Redis async client, etc.)
  */
 public class Exercise3B_AsyncEnrichment {
 
     public static void main(String[] args) throws Exception {
         final StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
 
-        // TODO: Implementare l'arricchimento asincrono
-        // Suggerimento: Guarda l'API AsyncDataStream.unorderedWait()
+        // TODO: Implement async enrichment
+        // Hint: Look at AsyncDataStream.unorderedWait() API
 
         env.execute("Exercise 3B - Async Enrichment");
     }
